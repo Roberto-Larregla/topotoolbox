@@ -166,10 +166,10 @@ classdef GRIDobj
                 dy = Y(2)-Y(1);
                 dx = X(2)-X(1);
                 
-                if abs(abs(dx)-abs(dy))>1e-9
-                    error('TopoToolbox:GRIDobj',...
-                          'The resolution in x- and y-direction must be the same');
-                end
+                %if abs(abs(dx)-abs(dy))>1e-9
+                %   error('TopoToolbox:GRIDobj',...
+                %          'The resolution in x- and y-direction must be the same');
+                % end
                     
                 
                 DEM.refmat = double([0 dy;...
